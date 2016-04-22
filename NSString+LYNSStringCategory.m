@@ -227,4 +227,13 @@
     }
     return [[NSString alloc] initWithBytes:data length:bit encoding:NSUTF8StringEncoding];
 }
+
+
+/**
+ *  返回url能识别的字符串
+ */
+- (instancetype)stringWithUrlFormatter:(NSString *)urlStr
+{
+    return [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+}
 @end

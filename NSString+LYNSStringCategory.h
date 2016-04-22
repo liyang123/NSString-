@@ -112,4 +112,9 @@
  *  @return 随机数
  */
 + (instancetype)stringWithRandomBit:(NSInteger)bit;
+
+/**
+ *  返回url能识别的字符串
+ */
+- (instancetype)stringWithUrlFormatter:(NSString *)urlStr;
 @end
